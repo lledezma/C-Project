@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84CEFE90235FDD52008FE814 /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libomp.dylib; path = ../../../../../usr/local/Cellar/llvm/9.0.0/lib/libomp.dylib; sourceTree = "<group>"; };
 		84ED59DB212389E700FD5C11 /* C-Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C-Project"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ED59DE212389E700FD5C11 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,11 +39,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84CEFE8F235FDD52008FE814 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84CEFE90235FDD52008FE814 /* libomp.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84ED59D2212389E700FD5C11 = {
 			isa = PBXGroup;
 			children = (
 				84ED59DD212389E700FD5C11 /* C-Project */,
 				84ED59DC212389E700FD5C11 /* Products */,
+				84CEFE8F235FDD52008FE814 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +98,7 @@
 		84ED59D3212389E700FD5C11 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Luis Ledezma";
 				TargetAttributes = {
 					84ED59DA212389E700FD5C11 = {
@@ -102,6 +112,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 84ED59D2212389E700FD5C11;
 			productRefGroup = 84ED59DC212389E700FD5C11 /* Products */;
@@ -237,16 +248,28 @@
 		84ED59E3212389E700FD5C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		84ED59E4212389E700FD5C11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
