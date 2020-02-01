@@ -27,8 +27,6 @@ int main(int argc, const char * argv[]){
             printf("%d\n",result);
             break;
     }
-
-
     return 0;
 }
 
